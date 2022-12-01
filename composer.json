@@ -1,0 +1,27 @@
+{
+    "name": "jaravel/laravel-translug",
+    "description": "Translate Chinese And Then Make It Sluggable",
+    "license": "MIT",
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jaravel\\Translug\\": "src/"
+        },
+        "files": [
+            "src/helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Jaravel\\Translug\\TranslugServiceProvider"
+            ],
+            "aliases": {
+                "Translug": "\\Jaravel\\Translug\\TranslugFacade"
+            }
+        }
+    }
+}
