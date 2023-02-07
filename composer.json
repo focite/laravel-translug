@@ -1,5 +1,5 @@
 {
-    "name": "jaravel/laravel-translug",
+    "name": "focite/laravel-translug",
     "description": "Translate Chinese And Then Make It Sluggable",
     "license": "MIT",
     "require": {
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jaravel\\Translug\\": "src/"
+            "Focite\\Translug\\": "src/"
         },
         "files": [
             "src/helpers/functions.php"
@@ -17,10 +17,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "\\Jaravel\\Translug\\TranslugServiceProvider"
+                "\\Focite\\Translug\\TranslugServiceProvider"
             ],
             "aliases": {
-                "Translug": "\\Jaravel\\Translug\\TranslugFacade"
+                "Translug": "\\Focite\\Translug\\TranslugFacade"
             }
         }
     }
